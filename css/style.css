@@ -1,59 +1,110 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+	  height: 100%;
+	 }
+body {
+	  height: 100%;
+	  font: 14px/18px 'Times New Roman', Times, sans-serif;
+	  background-color: #FFF;
+      }
+ol, ul {
+	    list-style: none;
+        }
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-family: Lato;
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+				 content: " ";
+				 display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+.right{
+	float: right;
 }
 
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../font/Lato-Black.ttf') format('ttf'),
-         url('//font/Lato-Heavy.ttf') format('ttf');
-  }
   
 
-#wrap {
+
+
+
+  
+
+#wrapper {
     width: 1600px;
+    text-align: center;
+}
+
+.container {
+    width: 1194;
 }
 
 header {
-    height: 1064px;
-    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 31px 0;
 }
 
-header a{
-    color: white;
+#logo {
+    float: left;
+    margin-right: 430px;
 }
 
-#home a{
-    border-bottom: 1px solid white;
+nav {
+    float: right;
+    width: 631px;
+    height: 16px;
 }
 
-nav{
-    background-image: url(../img/header-fon.png);
-    height: 944px;
-    
+nav a {
+    float: left;
+    font-family: Lato-Medium, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 255);
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 7px;
 }
 
-nav li {
-    display: inline-block;
-    font-size: 15px;
-    padding: 22px 69px 34px 0px;
-
+#home {
+    height: 942px;
+    background: #000 url(../img/home.png)
 }
-
-
-
-nav h1{
-    font-size: 67px;
-}
-
-nav ul{
-    height: 89px;
-}
-
-nav #logo {
-    padding:32px 430px 0 204px;
-}
-
