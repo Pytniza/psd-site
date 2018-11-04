@@ -162,6 +162,7 @@ header hr {
 .authorization  button:hover{
 	color: #fa2;
 	opacity: 0.9;
+	border:none;
 }
 
 .login {
@@ -322,16 +323,16 @@ table {
 
 .aboutAs {
 	border-top: #e6e6e6 dashed 2px;
-	width: 1183px;
-	margin: auto;
+	margin-left: 201px;
+	overflow: hidden;
 }
 
 .description {
 	float: left;
 	width: 521px;
 	height: 187px;
-	margin-top: 107px;
-	margin-right: 99px;
+	margin-top: 105px;
+	margin-right: 102px;
 	text-align: left;
 	border-right: #e6e6e6 dashed 2px;
 }
@@ -352,8 +353,69 @@ table {
 
 .development li{
 	float: left;
+	margin-right: 120px;
 }
 
-.development img{
+.development li:last-child{
+	margin-right: 200px;
+}
+
+.development p img{
 	border-radius: 50%;
+	border: 5px solid #e5e5e5;
+}
+
+figcaption img{
+	margin: 13px 23px 0px 23px;
+}
+
+figcaption img:last-child {
+	margin: 13px 0;
+}
+
+figcaption img:hover {
+	background: blue;
+}
+
+.development h1 {
+	font-size: 16px;
+}
+
+.development p{
+	font-size: 14px;
+}
+
+.development ul{
+	margin-top: 113px;
+}
+
+.comments {
+	height: 188px;
+	background: #000 url(../img/CommentsBG.png);
+	margin-top: 100px;
+	color: #fff;
+}
+
+
+ .servers {
+	margin-top: 99px;
+	height: 243px;
+ }
+
+ .servers li {
+	 float: left;
+	 margin-right: 103px;
+ }
+
+ .servers li:first-child {
+	margin-left: 201px;
+}
+
+footer{
+	background: #2a2a2a;
+}
+
+footer header{
+	background: #2a2a2a;
+	position: relative;
 }
