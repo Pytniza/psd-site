@@ -1,26 +1,24 @@
 ol, ul {
 	    list-style: none;
-        }
-* {
-	margin: 0;
-	padding: 0;
 }
 
 a{
 	text-decoration: none;
 }
 
-#wrapper {
-    max-width: 1600px;
-    text-align: center;
+header {
+	background: #000 url(../img/home.png);
+	background-size: auto auto;
+	height: 942px;
+	position: relative;
 }
 
 
-header {
+.menu {
     position: fixed;
     left: 0;
 	right: 0;
-	max-width: 1200px;
+	max-width: 1194px;
 	display: flex;
 	justify-content: space-between;
 	background: rgba(3, 3, 3, 0.096);
@@ -28,10 +26,11 @@ header {
 	align-items: center;
 	margin: 0 auto;
 	border-bottom: #fff solid 1px;
+	z-index: 999;
 }
 
 nav a {
-    font-size: 15px;
+    font-size: 16px;
 	color: rgba(255, 255, 255);
 }
 
@@ -39,43 +38,31 @@ nav a:hover {
 	color: #fa2;
 }
 
-header ul {
+nav ul {
 	display: flex;
 	justify-content: space-between;
 	width: 631px;
 }
 
-#home {
-    height: 942px;
-	background: #000 url(../img/home.png);
-	background-size: cover;
-	padding-top: 435px;
+.home {
+	position: absolute;
+	top: 435px;
+	left: 578px;
 	text-align: center;
 	color: #fff;
 }
 
-#home h1 {
-	font-family: MyriadPro-Bold, AdobeInvisFont;
-	font-size: 51px;
-	font-weight: bold;
-	height: 51px;
-	margin-bottom: 33px;
-
+.home h1 {
+	font-size: 55px;
 }
 
-#home h3 {
-	font-family: Georgia-bold, AdobeInvisFont, MyriadPro-Regular;
-	font-size: 24px;
-	text-align: center;
-	height: 78px;
-	margin-bottom: 20px;
-	height: 24px;
+.home h3 {
+	font-size: 25px;
 }
 
-.authorization {
-	overflow: hidden;
-
- }
+.authorization{
+	display: flex;
+}
 
 .authorization  button{
 	margin: 0px;
@@ -87,28 +74,43 @@ header ul {
 	width: 800px;
 	height: 123;
 	cursor: pointer;
-	overflow: visible;
-	
-
 }
 
-.authorization  button:hover{
-	color: #fa2;
-	opacity: 0.9;
-	border:none;
-}
 
 .login {
-	
-	float: left;
-	background: linear-gradient(103deg, #21424b 790px, #2fab6c 50%);
+    background: #21424b;
+    position: relative;
+    border: none;
+    font-weight: bold;
+}
 
+.login:before {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    border-bottom: 61px solid #2fab6c;
+    border-left: 20px solid #21424b;
 }
 
 .register {
-	
-	float: right;
-	background: linear-gradient(284deg, #2fab6c 790px, #21424b 50%);
+    background: #2fab6c;
+    position: relative;
+    border: none;
+    font-weight: bold;
+}
+
+.register:before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    border-top: 61px solid #21424b;
+    border-right: 20px solid #2fab6c;
+}
+
+.authorization  button:hover{
+	color: #fa2
 }
 
 .domain {
