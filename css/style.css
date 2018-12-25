@@ -206,21 +206,37 @@ domain:-moz-placeholder {
 }
 
 .packagesImg2 {
-	background: #fff url(../img/Packages.jpweg);
+	background: #fff;
 	height: 383px;
 }
 
-.packages ul{
+.packages>ul{
 	display: flex;
-	position: absolute;
-	top: 100px;
 	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 100px;
+	border-bottom: #cbcbcb solid 1px;
+	width: 1198px;
+	position: absolute;	
+	top: 100px;
+	left: 200px;
 }
 
-.packages-content{
-	max-width: 1198px;
-	margin: 0 auto
+.packages li{
+	height: 565px;
+	text-align: center;
+	width: 255px;
+	background: #fff;
 }
+
+.packages li img{
+	padding-top: 41px;
+	padding-bottom: 20px;
+}
+
+
+
 
 .aboutAs {
 	border-top: #e6e6e6 dashed 2px;
