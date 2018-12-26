@@ -228,6 +228,7 @@ domain:-moz-placeholder {
 	text-align: center;
 	width: 255px;
 	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .packages li img{
@@ -235,8 +236,83 @@ domain:-moz-placeholder {
 	padding-bottom: 20px;
 }
 
+.packages table{
+	border-top: #C4C4C4 solid 1px;
+	border-bottom: #C4C4C4 solid 1px;
+	font-size: 20px;
+	color: #cbcbcb;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	max-width: 200px;
+	margin: 20px auto;
+}
 
+.packages table th:nth-child(2){
+	text-align: right;
+}
 
+.basic{
+	border-top: #F9D423 solid 5px;
+}
+
+.basic th:nth-child(2){
+	color: #F9D423;
+}
+
+.basic h3{
+	border-bottom: #F9D423 solid 3px;
+}
+
+.normal{
+	border-top: #7F8C8D solid 5px;
+}
+
+.normal th:nth-child(2){
+	color: #7F8C8D;
+}
+
+.normal h3{
+	border-bottom: #7F8C8D solid 3px;
+}
+
+.big{
+	border-top: #F85F40 solid 5px;
+}
+
+.big th:nth-child(2){
+	color: #F85F40;
+}
+
+.big h3{
+	border-bottom: #F85F40 solid 3px;
+}
+
+.biggest{
+	border-top: #1ABC9C solid 5px;
+}
+
+.biggest th:nth-child(2){
+	color: #1ABC9C;
+}
+
+.biggest h3{
+	border-bottom: #1ABC9C solid 3px;
+}
+
+.plan {
+	font-size: 23px;
+}
+
+.month{
+	font-size: 13px;
+	color: #868686;
+}
+
+.packages h3{
+	max-width: 105px;
+	margin: 0 auto;
+}
 
 .aboutAs {
 	border-top: #e6e6e6 dashed 2px;
