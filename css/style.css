@@ -343,13 +343,21 @@ domain:-moz-placeholder {
 	padding-left: 80px;
 }
 
-.about ul img{
+.about ul p img{
 	border-radius: 50%;
 	border: #E5E5E5 solid 5px;
 }
 
 figcaption a{
 	display: inline;
+}
+
+figcaption h6{
+	font-size: 15px;
+	color: #C4C4C4;
+	margin: 13px auto;
+	text-align: center;
+
 }
 
 
