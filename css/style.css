@@ -348,6 +348,10 @@ domain:-moz-placeholder {
 	border: #E5E5E5 solid 5px;
 }
 
+figcaption{
+	text-align: center;
+}
+
 figcaption a{
 	display: inline;
 }
