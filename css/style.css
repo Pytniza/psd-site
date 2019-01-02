@@ -368,20 +368,31 @@ figcaption h6{
 .comments {
 	height: 188px;
 	background: #000 url(../img/CommentsBG.png);
-	margin-top: 100px;
 	color: #fff;
+	
 }
 
+.slider li {
+	background-color: #eee; 
+    border: 1px solid #666; 
+    border-radius: 5px; 
+    box-shadow: inset 1px 1px 1px #888; 
+    display: inline-block; 
+    height: 10px; 
+    width: 10px; 
+    margin: 0 5px; 
+    cursor: pointer; 
+}
 
- .servers {
+.servers {
 	margin-top: 99px;
 	height: 243px;
- }
+}
 
- .servers li {
-	 float: left;
-	 margin-right: 103px;
- }
+.servers li {
+	float: left;
+	margin-right: 103px;
+}
 
  .servers li:first-child {
 	margin-left: 201px;
