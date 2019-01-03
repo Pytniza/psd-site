@@ -366,22 +366,63 @@ figcaption h6{
 
 
 .comments {
-	height: 188px;
+	height: 190px;
 	background: #000 url(../img/CommentsBG.png);
 	color: #fff;
+	position: relative;
 	
 }
 
-.slider li {
-	background-color: #eee; 
-    border: 1px solid #666; 
-    border-radius: 5px; 
-    box-shadow: inset 1px 1px 1px #888; 
+.slider{
+	text-align: center;
+	position: absolute;
+	top:50px;
+	left: 355px;
+	max-width: 890px;
+	height: 95px;
+}
+
+.slider p{
+	min-width: 870px;
+}
+
+.slider-nav{
+	position: absolute;
+	right: 300px;
+	bottom: 10px; 
+	border-left: #E5E5E5 solid 1px;
+
+}
+.slider-botton {
+	background-color: #424241; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
     display: inline-block; 
     height: 10px; 
     width: 10px; 
     margin: 0 5px; 
-    cursor: pointer; 
+    cursor: pointer;
+}
+
+.slider li:hover{
+	background: #fff;
+}
+
+.slider li:first-child{
+	background: #fff;
+}
+
+#slide-2{
+	display: none;
+}
+
+#slide-3{
+	display: none;
+}
+
+.slider span{
+	float: left;
+	padding-left: 300px
 }
 
 .servers {
