@@ -426,17 +426,42 @@ figcaption h6{
 }
 
 .servers {
-	margin-top: 99px;
-	height: 243px;
+	height: 342px;
+	text-align: center;
 }
 
-.servers li {
-	float: left;
-	margin-right: 103px;
+.servers-content{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 96px auto;
 }
 
- .servers li:first-child {
-	margin-left: 201px;
+.servers-content li::before{
+	content: " ";
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+
+.servers-content li:nth-child(1)::before{
+	background: url(../img/spritesheet.png) no-repeat -10px -10px;
+}
+
+.servers-content li:nth-child(2)::before{
+	background: url(../img/spritesheet.png) no-repeat -90px -10px;
+}
+
+.servers-content li:nth-child(3)::before{
+	background: url(../img/spritesheet.png) no-repeat -170px -10px;
+}
+
+.servers-content li:nth-child(4)::before{
+	background: url(../img/spritesheet.png) no-repeat -250px -10px;
+}
+
+.servers-content li{
+	max-width: 225px;
 }
 
 footer{
