@@ -7,35 +7,29 @@ a{
 }
 
 header {
-	background: #000 url(../img/home.png);
+	background: #000 url(../img/home.png) no-repeat;
 	background-size: auto auto;
 	height: 942px;
-	position: relative;
 }
 
 
 .menu {
-    position: fixed;
-    left: 0;
-	right: 0;
 	max-width: 1194px;
 	display: flex;
 	justify-content: space-between;
-	background: rgba(3, 3, 3, 0.384);
 	height: 86px;
 	align-items: center;
 	margin: 0 auto;
-	border-bottom: #fff solid 1px;
-	z-index: 999;
+	border-bottom: #2A2A2E solid 1px;
 }
 
-nav a {
+.menu nav a {
     font-size: 16px;
-	color: rgba(255, 255, 255);
+	color: rgba(255, 255, 255);padding-bottom: 34px;
 }
 
-nav a:hover {
-	color: #fa2;
+.menu nav a:hover {
+	border-bottom: 1px solid #fff;
 }
 
 nav ul {
@@ -46,7 +40,7 @@ nav ul {
 
 .home {
 	position: absolute;
-	top: 435px;
+	top: 350px;
 	left: 578px;
 	text-align: center;
 	color: #fff;
@@ -65,6 +59,7 @@ nav ul {
 }
 
 .authorization  button{
+	outline:none;
 	margin: 0px;
 	padding: 0;
 	height: 123px;
@@ -468,7 +463,29 @@ footer{
 	background: #2a2a2a;
 }
 
-footer header{
-	background: #2a2a2a;
-	position: relative;
+.menu-footer {
+	max-width: 1194px;
+	display: flex;
+	justify-content: space-between;
+	height: 86px;
+	align-items: center;
+	margin: 0 auto;
+	border-bottom: #3B3B3B solid 1px;
+	text-transform: uppercase;
+}
+
+.menu-footer nav a {
+    font-size: 16px;
+	color: #3B3B3B;
+	padding-bottom: 34px;
+}
+
+.menu-footer nav a:hover {
+	color: #fff;
+}
+
+.menu-footer nav ul {
+	display: flex;
+	justify-content: space-between;
+	width: 631px;
 }
