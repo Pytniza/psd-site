@@ -32,7 +32,7 @@ header {
 	border-bottom: 1px solid #fff;
 }
 
-nav ul {
+.menu nav ul {
 	display: flex;
 	justify-content: space-between;
 	width: 631px;
@@ -461,6 +461,15 @@ figcaption h6{
 
 footer{
 	background: #2a2a2a;
+	color: #4B4B4B;
+}
+
+footer a{
+	color: #4B4B4B;
+}
+
+footer a:hover {
+	color: #fff;
 }
 
 .menu-footer {
@@ -470,22 +479,34 @@ footer{
 	height: 86px;
 	align-items: center;
 	margin: 0 auto;
-	border-bottom: #3B3B3B solid 1px;
+	border-bottom: #4B4B4B solid 1px;
 	text-transform: uppercase;
 }
 
 .menu-footer nav a {
     font-size: 16px;
-	color: #3B3B3B;
 	padding-bottom: 34px;
-}
-
-.menu-footer nav a:hover {
-	color: #fff;
 }
 
 .menu-footer nav ul {
 	display: flex;
 	justify-content: space-between;
 	width: 631px;
+}
+
+.cupboard{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 56px 0;
+	max-width: 1196px;
+}
+
+.cupboard>li{
+	max-width: 337px;
+	text-align: left;
+}
+
+.navigation li:before{
+		content: "> ";
 }
