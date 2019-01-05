@@ -8,8 +8,9 @@ a{
 
 header {
 	background: #000 url(../img/home.png) no-repeat;
-	background-size: auto auto;
+	background-size: cover;
 	height: 942px;
+	position: relative;
 }
 
 
@@ -39,11 +40,12 @@ header {
 }
 
 .home {
+	margin: auto;
 	position: absolute;
-	top: 350px;
-	left: 578px;
+	top: 0; left: 0; bottom: 0; right: 0;
 	text-align: center;
 	color: #fff;
+	height: 450px;
 }
 
 .home h1 {
@@ -66,7 +68,7 @@ header {
 	text-align: center;
 	font-size: 30px;
 	color: #fff;
-	width: 800px;
+	width: 50%;
 	height: 123;
 	cursor: pointer;
 }
@@ -102,10 +104,6 @@ header {
     left: 0;
     border-top: 61px solid #21424b;
     border-right: 20px solid #2fab6c;
-}
-
-.authorization  button:hover{
-	color: #fa2
 }
 
 .domain {
@@ -196,13 +194,16 @@ domain:-moz-placeholder {
 }
 
 .packagesImg {
-	background: #000 url(../img/packages.png);
+	background: #000 url(../img/packages.png) no-repeat;
+	background-size: cover;
 	height: 383px;
+	width: 100%;
 }
 
 .packagesImg2 {
 	background: #fff;
 	height: 383px;
+	width: 100%;
 }
 
 .packages ul{
@@ -213,15 +214,16 @@ domain:-moz-placeholder {
 	padding-bottom: 100px;
 	border-bottom: #cbcbcb dashed 1px;
 	width: 1198px;
-	position: absolute;	
-	top: 100px;
-	left: 200px;
+	max-width: 80%;
+	margin: auto;
+	position: absolute;
+	top: 100px; left: 0; bottom: 0; right: 0;	
 }
 
 .packages li{
 	height: 565px;
 	text-align: center;
-	width: 255px;
+	width: 20%;
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -359,10 +361,10 @@ figcaption h6{
 
 }
 
-
 .comments {
 	height: 190px;
 	background: #000 url(../img/CommentsBG.png);
+	background-size: cover;
 	color: #fff;
 	position: relative;
 	
@@ -370,9 +372,9 @@ figcaption h6{
 
 .slider{
 	text-align: center;
+	margin: auto;
 	position: absolute;
-	top:50px;
-	left: 355px;
+	top: 0; left: 0; bottom: 0; right: 0;
 	max-width: 890px;
 	height: 95px;
 }
