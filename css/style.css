@@ -7,12 +7,15 @@ a{
 }
 
 header {
-	background: #000 url(../img/home.png) no-repeat;
+	background: #000 url(../img/home.png) no-repeat center top fixed;
 	background-size: cover;
 	height: 942px;
 	position: relative;
 }
 
+body{
+	font-family: 'Lato', sans-serif;
+}
 
 .menu {
 	max-width: 1194px;
@@ -111,7 +114,7 @@ header {
 }
 
 .domain-content{
-	max-width: 890px;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -128,7 +131,7 @@ header {
 .domain form {
 	display: flex;
 	align-items: center;
-    max-width: 889px; /* Ширина поля с кнопкой */
+    width: 100%; /* Ширина поля с кнопкой */
     border: 2px solid #d9d9d9; /* Параметры рамки */
 	height: 50px; /* Минимальная высота */
 	font-size: 18px;
@@ -145,7 +148,7 @@ header {
     border: none; /* Убираем рамку */
     outline: none; /* Убираем свечение в Chrome и Safari */
     -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
-    width: 274px; /* Ширина поля */
+    width: 50%; /* Ширина поля */
 	vertical-align: middle; /* Выравнивание по середине */
 	border-right: #cbcbcb solid 1px;
 	border-left: #cbcbcb solid 1px;
@@ -173,7 +176,7 @@ domain:-moz-placeholder {
 }
 
 .domain table {
-	width: 892px;
+	width: 100%;
 	height: 197px;
 	margin-top: 38px;
 	border: #d9d9d9 solid 2px;
@@ -213,7 +216,7 @@ domain:-moz-placeholder {
 	padding-bottom: 100px;
 	border-bottom: #cbcbcb dashed 1px;
 	width: 1198px;
-	max-width: 80%;
+	max-width: 90%;
 	margin: auto;
 	position: absolute;
 	top: 100px; left: 0; bottom: 0; right: 0;	
@@ -226,7 +229,7 @@ domain:-moz-placeholder {
 .packages li{
 	height: 565px;
 	text-align: center;
-	width: 20%;
+	min-width: 200px;
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -314,16 +317,22 @@ domain:-moz-placeholder {
 	margin: 0 auto;
 }
 
+.about{
+	width: 100%;
+}
+
 .about-content{
 	display: flex;
-	max-width: 1183px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 90%;
 	margin: 106px auto;
 }
 
 .description {
-	max-width: 719px;
 	height: 187px;
 	border-right: #e6e6e6 dashed 2px;
+	min-width: 40%;
 }
 
 .description h2 {
@@ -339,13 +348,25 @@ domain:-moz-placeholder {
 .about ul{
 	display: flex;
 	justify-content: space-between;
-	width: 665px;
-	padding-left: 80px;
+	flex-wrap: wrap;
+	padding: 0;
+	width: 50%;
+	margin: 30px auto;
+}
+
+.about li{
+	min-width: 100px;
+	max-width: 200px;
 }
 
 .about ul p img{
 	border-radius: 50%;
 	border: #E5E5E5 solid 5px;
+	margin: 0 auto;
+}
+
+figure{
+	margin: 0;
 }
 
 figcaption{
@@ -361,7 +382,6 @@ figcaption h6{
 	color: #C4C4C4;
 	margin: 13px auto;
 	text-align: center;
-
 }
 
 .comments {
@@ -383,13 +403,13 @@ figcaption h6{
 }
 
 .slider p{
-	min-width: 870px;
+	max-width: 870px;
 }
 
 .slider-nav{
 	position: absolute;
 	right: 300px;
-	bottom: 10px; 
+	bottom: 0px; 
 	border-left: #E5E5E5 solid 1px;
 
 }
@@ -426,15 +446,17 @@ figcaption h6{
 }
 
 .servers {
-	height: 342px;
 	text-align: center;
+	width: 100%;
 }
 
 .servers-content{
 	display: flex;
 	justify-content: space-between;
-	max-width: 1200px;
+	flex-wrap: wrap;
+	width: 90%;
 	margin: 96px auto;
+	padding: 0;
 }
 
 .servers-content li::before{
@@ -462,6 +484,7 @@ figcaption h6{
 
 .servers-content li{
 	max-width: 225px;
+	margin: 0 auto;
 }
 
 footer{
@@ -514,4 +537,291 @@ footer a:hover {
 
 .navigation li:before{
 		content: "> ";
+}
+
+#menumobil{
+	display: none;
+}
+
+@media (max-width: 767px){
+	.menu{
+		display: none;
+	}
+
+	.comments {
+		display: none;
+	}
+
+	.description {
+		border-right: none;
+	}
+	.packages{
+	background: #000;
+	}
+
+	.packagesImg, .packagesImg2{
+		display: none
+	}
+
+	.packages ul{
+		position: static;
+		flex-wrap: wrap;
+	}
+
+	.packages li{
+		width: 100%;
+		margin: 5px;
+	}
+
+	footer{
+		display: none;
+	}
+
+	.authorization{
+		display: none
+	}
+
+	/* main menu
+----------------------------*/
+#menumobil
+{
+    display:block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center; /*Specify the alignment of the whole UL if UL is not width:100%;*/
+    letter-spacing:normal;
+    padding:20px 10px;
+	position:relative;
+	background: #000;
+}
+
+#menumobil ul
+{ 
+    margin:0 auto;
+    padding:0;
+    text-align:left; /* Alignment of each top-level menu items within the UL */
+    width:100%;
+    font-size:0;
+    background:#FFF;
+    display:none;
+    list-style:none;
+    position:relative;
+    z-index:999999990; 
+    
+}
+
+#menumobil li
+{
+    margin:0;
+    padding:0;
+    font-size:20px;
+    display:block;
+    position:relative;
+    color:#FFF;
+    line-height:44px; /*This determines the height of the menu*/
+    transition:background-color 0.2s;
+    outline:none;
+	-moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#menumobil .top-heading
+{
+    font-weight:normal;
+    white-space:nowrap;
+    margin:0 22px;
+    color:inherit;
+    text-decoration:none;
+    display:inline-block; 
+    outline:0;
+    cursor:pointer;
+}
+
+/* links of top-heading */
+#menumobil a, #menumobil a:link, #menumobil a:hover
+{
+    color:inherit;
+}
+#menumobil a:hover
+{
+    text-decoration:underline;
+}
+#menumobil a:focus
+{
+    outline:1px dotted #09F;
+}
+
+/* caret(arrow icon) */
+#menumobil .caret
+{
+    color:inherit;
+    left:-18px;
+    width: 0;
+    height: 0;
+    overflow:hidden;/*for IE6*/
+    vertical-align:middle;
+    margin-bottom:2px;
+    border-top: 6px solid;/*caret size is 4px now*/
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    display: inline-block;
+    position:relative;
+}  
+        
+/* sub-menu layout
+----------------------------*/
+
+#menumobil .dropdown
+{
+    width:auto;    
+    left:0px;
+    color:#000000; 
+    padding:0;margin:0;display:none;
+    position:relative;
+    top:100%;
+    *top:auto;/*IE7 hack*/    
+    
+}
+
+#menumobil .over .dropdown
+{
+    display:block;
+}
+
+#menumobil .dd-inner {
+    text-align:left;
+    padding:20px;
+    margin:0px;
+    background-color:#FFF;
+    white-space:nowrap;
+    font-size:16px;
+    line-height:1.35;
+}
+  
+/* links in sub menu
+----------------------------*/
+
+#menumobil .dropdown a
+{
+    display:table-row;
+    *display:block;
+    color:#333;
+    line-height:24px;  
+    text-decoration:none;
+    padding:0;
+}
+
+#menumobil .dropdown a:hover, #menumobil .dropdown a:focus
+{
+    text-decoration:underline;
+    color:#09F;
+}
+
+/* blocks within the sub-menu
+-----------------------------*/
+#menumobil .column
+{
+    text-align:left;
+    vertical-align:top;/*or middle*/
+    display:inline-block;
+    *display:inline;*zoom:1;
+    white-space:normal;
+    width:auto;min-width:260px;
+padding:0 30px;
+border-right:1px solid #FFF;
+}
+
+#menumobil div.dd-inner div:last-child
+{
+    border-right:none;
+}
+
+#menumobil .column h3 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+#menumobil li {
+background:#000;
+margin-top:3px;
+border-radius:6px;}
+
+#menumobilLink {display:none;}
+
+
+/*######## add additional styles for mobile-friendly responsive menu ########*/
+
+div#search-block {            
+    -webkit-transition: padding .25s, height .25s;
+    transition: padding .25s, height .25s;
+    height: 0px;
+    overflow:hidden;
+    padding:0;
+}
+        
+div#search-block.show {
+    display: block;
+    height: 36px;
+    margin:20px 0 16px;
+}
+
+
+#menumobil div.logo {
+	background: #000 url(../img/logo.png) no-repeat 0 0;
+	height:72px;
+	border-radius:9px;		
+}
+#menumobil div.logo a {
+	display: block;
+	height:72px;
+	max-width:200px;
+	background:none;		
+}
+    
+#menumobil .menu-icon, div.searchIcon  {
+	width: 60px;
+	height:72px;
+	background: transparent url(../img/menu-buttons.png) no-repeat -60px -72px;
+	display: block;
+	cursor: pointer;
+	-moz-user-select:none;		
+    -webkit-user-select: none;
+    margin-right:9px;
+    outline:none;     
+    /*align the icon to the right*/
+    float:right;
+}
+#menumobil div.searchIcon  
+{
+    background-position:0 -72px;
+    right:88px;
+}
+
+    #menumobil
+    {
+        padding:0;
+    }
+
+    #menumobil .column.mayHide {
+        display:none;
+    }
+    
+    #menumobil .caret
+    {
+    	position:absolute;
+        left:auto;
+        right:14px;
+        top: 19px;
+        border-width:5px;
+    }  
+    /*turn each column to list vertically instead of horizontally */
+    #menumobil .column {
+        width:auto;
+        padding:0;
+        border:none;
+        display:block;
+    }
 }
